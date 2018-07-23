@@ -10,6 +10,7 @@ namespace NeuCanteen
     public delegate void Neupizzahandler();
     public class Program
     {
+        public List<string> Cart { get; set; } = new List<string>();
         public event Neupizzahandler Bill;
         static void Main(string[] args)
         {
@@ -23,7 +24,7 @@ namespace NeuCanteen
             checkout.Bill += Purchase;
             while (menu == true)
             {
-                Console.WriteLine("\n\n\t\t\tNeuPizzA");
+                Console.WriteLine("\n\n\t\t\tNeuPizzas");
                 Console.WriteLine("\n1.Pizza \t2.Side  \t3.Bevarages \t4.Check Out");
                 Console.WriteLine("Total Cost :\t");
                 TotalCost = TotalCost + pizza.PizzaCost;
@@ -37,13 +38,13 @@ namespace NeuCanteen
                 switch (userChoice)
                 {
                     case 1:
-                        pizza.SelectPizzaType();
+                        checkout.Cart.Add(pizza.SelectPizzaType());
                         break;
                     case 2:
-                        side.SelectSideType();
+                        checkout.Cart.Add(side.SelectSideType());
                         break;
                     case 3:
-                        bevarage.SelectBevarageType();
+                        checkout.Cart.Add(bevarage.SelectBevarageType());
                         break;
                     case 4:
                         checkout.Bill?.Invoke();
@@ -55,11 +56,12 @@ namespace NeuCanteen
             }
             void Purchase()
             {
-                for (int cartItem = 0; cartItem < canteen.Cart.Count; cartItem++)
+                Console.Write("\n\n\tYour Cart\n");
+                for (int cartItem = 0; cartItem < checkout.Cart.Count; cartItem++)
                 {
-                    Console.Write(canteen.Cart[cartItem]);
+                    Console.Write(checkout.Cart[cartItem]);
+                    Console.Write("\n");
                 }
-                Console.ReadLine();
                 Console.Write("TotalCost : ");
                 Console.Write(TotalCost);
                 Console.ReadLine();

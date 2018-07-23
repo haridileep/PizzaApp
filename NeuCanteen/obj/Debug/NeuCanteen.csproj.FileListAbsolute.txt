@@ -5,3 +5,10 @@ c:\users\hari.dileepkumar\Source\Repos\NeuCanteen\NeuCanteen\bin\Debug\NeuCantee
 c:\users\hari.dileepkumar\Source\Repos\NeuCanteen\NeuCanteen\bin\Debug\NeuCanteen.pdb
 c:\users\hari.dileepkumar\Source\Repos\NeuCanteen\NeuCanteen\obj\Debug\NeuCanteen.exe
 c:\users\hari.dileepkumar\Source\Repos\NeuCanteen\NeuCanteen\obj\Debug\NeuCanteen.pdb
+C:\Users\hari.dileepkumar\Source\Repos\updated\NeuCanteen\NeuCanteen\bin\Debug\NeuCanteen.exe.config
+C:\Users\hari.dileepkumar\Source\Repos\updated\NeuCanteen\NeuCanteen\bin\Debug\NeuCanteen.exe
+C:\Users\hari.dileepkumar\Source\Repos\updated\NeuCanteen\NeuCanteen\bin\Debug\NeuCanteen.pdb
+C:\Users\hari.dileepkumar\Source\Repos\updated\NeuCanteen\NeuCanteen\obj\Debug\NeuCanteen.csprojAssemblyReference.cache
+C:\Users\hari.dileepkumar\Source\Repos\updated\NeuCanteen\NeuCanteen\obj\Debug\NeuCanteen.csproj.CoreCompileInputs.cache
+C:\Users\hari.dileepkumar\Source\Repos\updated\NeuCanteen\NeuCanteen\obj\Debug\NeuCanteen.exe
+C:\Users\hari.dileepkumar\Source\Repos\updated\NeuCanteen\NeuCanteen\obj\Debug\NeuCanteen.pdb

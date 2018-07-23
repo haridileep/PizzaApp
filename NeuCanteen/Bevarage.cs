@@ -9,11 +9,11 @@ namespace NeuCanteen
 {
     public class Bevarage :NeuCanteenModel
     {  
-        public void SelectBevarageType()
+        public string SelectBevarageType()
         {
-            var canteen = new NeuCanteenModel();
-            Console.WriteLine("\n\n\t\tSidE");
-            Console.WriteLine("\n1.Coke :40 \n2.Sprite :40\n");
+            string bevarageChoice = "";
+            Console.WriteLine("\n\n\t\tBevarages");
+            Console.WriteLine("\n1.Coke :40 \t2.Sprite :40\n");
             Console.WriteLine("\nEnter your Choice :\t");
             int userChoice = Convert.ToInt32(Console.ReadLine());
             Console.Clear();
@@ -21,15 +21,16 @@ namespace NeuCanteen
             {
                  case 1:
                        BevarageCost = 40;
-                       Cart.Add("Coke = 40");
+                       bevarageChoice="Coke : 40";
                        break;
                  case 2:
                        BevarageCost = 40;
-                       Cart.Add("Sprite = 40");
+                       bevarageChoice = "Sprite : 40";
                        break;
                  default:
                        break;
             }
+            return bevarageChoice;
         }
     }
 }
